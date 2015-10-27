@@ -1,4 +1,4 @@
-# Pleaguer
+# Pleaguer [![Inline docs](http://inch-ci.org/github/Kosmas/pleaguer.svg?branch=master)](http://inch-ci.org/github/Kosmas/pleaguer)
 
 To start your Phoenix app:
 
