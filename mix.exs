@@ -36,7 +36,8 @@ defmodule Pleaguer.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
-     {:inch_ex, only: :test}]
+     {:inch_ex, only: :test},
+     {:exrm, "~> 0.19.9"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
