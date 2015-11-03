@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :pleaguer, Pleaguer.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
+  url: [host: "pleaguer.mach7x.com", port: 8080],
   cache_static_manifest: "priv/static/manifest.json",
   server: true
 
