@@ -31,6 +31,7 @@ defmodule Pleaguer.UserControllerTest do
     assert html_response(conn, 200) =~ "New user"
   end
 
+  @tag individual_test: "wip"
   test "shows chosen resource", %{conn: conn} do
     user = Repo.insert! %User{}
     conn = get conn, user_path(conn, :show, user)
@@ -43,12 +44,14 @@ defmodule Pleaguer.UserControllerTest do
     end
   end
 
+  @tag individual_test: "wip"
   test "renders form for editing chosen resource", %{conn: conn} do
     user = Repo.insert! %User{}
     conn = get conn, user_path(conn, :edit, user)
     assert html_response(conn, 200) =~ "Edit user"
   end
 
+  @tag individual_test: "wip"
   test "updates chosen resource and redirects when data is valid", %{conn: conn} do
     user = Repo.insert! %User{}
     conn = put conn, user_path(conn, :update, user), user: @valid_attrs
@@ -56,12 +59,14 @@ defmodule Pleaguer.UserControllerTest do
     assert Repo.get_by(User, @valid_attrs)
   end
 
+  @tag individual_test: "wip"
   test "does not update chosen resource and renders errors when data is invalid", %{conn: conn} do
     user = Repo.insert! %User{}
     conn = put conn, user_path(conn, :update, user), user: @invalid_attrs
     assert html_response(conn, 200) =~ "Edit user"
   end
 
+  @tag individual_test: "wip"
   test "deletes chosen resource", %{conn: conn} do
     user = Repo.insert! %User{}
     conn = delete conn, user_path(conn, :delete, user)
